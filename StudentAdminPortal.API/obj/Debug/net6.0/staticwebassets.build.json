@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "FmmGzTcvnn91XAw8C6LjH4lCGl26Y0qFwz6sxMyaWAI=",
+  "Source": "StudentAdminPortal.API",
+  "BasePath": "_content/StudentAdminPortal.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
