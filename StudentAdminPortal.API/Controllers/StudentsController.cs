@@ -22,22 +22,22 @@ namespace StudentAdminPortal.API.Controllers
         {
             var students = await studentRepository.GetStudentsAsync();
 
-         
+
 
             return Ok(mapper.Map<List<Student>>(students));
         }
 
         [HttpGet]
-        [Route("[controller]/{studentId:guid}")]
-        public async Task<IActionResult> GetStudentByIdAsync([FromRoute]Guid studentId)
+        [Route("[controller]/{studentId:guid}"), ActionName("GetStudentByIdAsync")]
+        public async Task<IActionResult> GetStudentByIdAsync([FromRoute] Guid studentId)
         {
             var students = await studentRepository.GetStudentByIdAsync(studentId);
 
-            if(students is null)
+            if (students is null)
             {
                 return NotFound();
             }
-         
+
             return Ok(mapper.Map<Student>(students));
 
 
@@ -47,19 +47,40 @@ namespace StudentAdminPortal.API.Controllers
         [Route("[controller]/{studentId:guid}")]
         public async Task<IActionResult> UpdateStudentAsync([FromRoute] Guid studentId, [FromBody] UpdateStudentRequest request)
         {
-           
+
             if (await studentRepository.Exists(studentId))
             {
 
                 var updateStudent = await studentRepository.UpdateStudentAsync(studentId, mapper.Map<DataModels.Student>(request));
 
-                if(updateStudent is not null)
+                if (updateStudent is not null)
                 {
                     return Ok(mapper.Map<Student>(updateStudent));
                 }
             }
-          
+
             return NotFound();
+        }
+
+        [HttpDelete]
+        [Route("[controller]/{studentId:guid}")]
+        public async Task<IActionResult> DeleteStudentAsync([FromRoute] Guid studentId)
+        {
+            if (await studentRepository.Exists(studentId))
+            {
+                return Ok(mapper.Map<Student>(await studentRepository.DeleteStudentAsync(studentId)));
+            }
+
+            return NotFound();
+        }
+
+        [HttpPost]
+        [Route("[controller]/Add")]
+        public async Task<IActionResult> AddStudentAsync([FromBody] AddStudentRequest request)
+        {
+          var student = await studentRepository.AddStudentAsync(mapper.Map<DataModels.Student>(request));
+
+            return CreatedAtAction(nameof(GetStudentByIdAsync), new {studentId = student.Id}, mapper.Map<Student>(student));
         }
     }
 }
