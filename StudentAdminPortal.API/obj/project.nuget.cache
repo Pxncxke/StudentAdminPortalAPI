@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "N0ZkYkcZyI4K2jp7kKCOUmiN0hFtQS6OVAQYnApetFhgBfwc+KaxCaqqejH+0n3n7RRmppUN4Sg2mAJC6hl4YQ==",
+  "dgSpecHash": "0Q0uqT9e/Db2eYdwRN7gkAWjtSsdIOWpedjI17TrzrhNNUooVQqslM3x1fRdFdjUKOIwHTx2YLbphK7mPb7saw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Pancake\\source\\repos\\StudentAdminPortal.API\\StudentAdminPortal.API\\StudentAdminPortal.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Pancake\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\Pancake\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
+    "C:\\Users\\Pancake\\.nuget\\packages\\fluentvalidation\\11.2.1\\fluentvalidation.11.2.1.nupkg.sha512",
+    "C:\\Users\\Pancake\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.2.2\\fluentvalidation.aspnetcore.11.2.2.nupkg.sha512",
+    "C:\\Users\\Pancake\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.2.1\\fluentvalidation.dependencyinjectionextensions.11.2.1.nupkg.sha512",
     "C:\\Users\\Pancake\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\Pancake\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Pancake\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

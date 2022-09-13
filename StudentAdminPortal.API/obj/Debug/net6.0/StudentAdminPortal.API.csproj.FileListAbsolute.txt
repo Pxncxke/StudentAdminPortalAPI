@@ -61,3 +61,6 @@ C:\Users\Pancake\source\repos\StudentAdminPortal.API\StudentAdminPortal.API\bin\
 C:\Users\Pancake\source\repos\StudentAdminPortal.API\StudentAdminPortal.API\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
 C:\Users\Pancake\source\repos\StudentAdminPortal.API\StudentAdminPortal.API\bin\Debug\net6.0\AutoMapper.dll
 C:\Users\Pancake\source\repos\StudentAdminPortal.API\StudentAdminPortal.API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Pancake\source\repos\StudentAdminPortal.API\StudentAdminPortal.API\bin\Debug\net6.0\FluentValidation.dll
+C:\Users\Pancake\source\repos\StudentAdminPortal.API\StudentAdminPortal.API\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+C:\Users\Pancake\source\repos\StudentAdminPortal.API\StudentAdminPortal.API\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
